@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .App {
   text-align: center;
 }
@@ -32,7 +34,102 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.itemsContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.itemsContainer.list_view {
+  flex-direction: column;
+  background-color: floralwhite;
+
+}
+
+.itemsContainer.cards_view {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item.list_view {
+  flex-direction: row;
+}
+
+.item.cards_view {
+  flex-direction: column;
+  width: 30%;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: floralwhite;
+  box-shadow: 10px 2px 3px gray;
+  border-radius: 20px;
+}
+
+.card_bottom {
+  display: flex;
+}
+
+.image {
+  width: 100%;
+  height: 100px;
+  flex-grow: 2;
+}
+
+.item_name {
+  font-size: 2rem;
+}
+
+.item_price {
+  color: red;
+  margin-right: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  color: red;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid red;
+  display: inline;
+}
+
+.view-switch {
+  margin-left: 50%;
 }
